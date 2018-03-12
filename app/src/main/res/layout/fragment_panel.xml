@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.linkever.jni.study.facedemo.frags.PanelFragment">
+
+   <include
+       layout="@layout/lay_panel_face"
+       android:layout_height="match_parent"
+       android:layout_width="match_parent"/>
+
+</FrameLayout>
