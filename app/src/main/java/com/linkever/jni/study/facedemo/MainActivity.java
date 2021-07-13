@@ -1,14 +1,11 @@
 package com.linkever.jni.study.facedemo;
 
+import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -48,8 +45,7 @@ public class MainActivity extends AppCompatActivity implements PanelFragment.Pan
         String str = mContent.getText().toString();
         Spannable spannable = new SpannableString(str);
         //表情解析
-        Face.decode(mContent,spannable, (int) txt.getTextSize());
-//        Face.decode(mContent,spannable, (int) Ui.dipToPx(getResources(),20));
+        Face.decode(txt, spannable, (int) Ui.dipToPx(getResources(), 20));
         //把内容设置到布局上
         txt.setText(spannable);
     }
