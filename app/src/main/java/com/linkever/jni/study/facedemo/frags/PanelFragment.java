@@ -67,6 +67,7 @@ public class PanelFragment extends Fragment {
                     return;
                 }
                 //模拟键盘点击
+
                 KeyEvent event = new KeyEvent(0,0,0,KeyEvent.KEYCODE_DEL,
                         0,0,0,0,KeyEvent.KEYCODE_ENDCALL);
                 callback.getInputEditText().dispatchKeyEvent(event);
