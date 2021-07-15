@@ -322,6 +322,7 @@ public class Face {
                             //设置到Bound进去
                             mDrawable.setBounds(0, 0, width > 0 ? width : size, height > 0 ? height : size);
                             //通知刷新
+
                             view.invalidate();
                         }
                     });
